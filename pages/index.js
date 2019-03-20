@@ -1,16 +1,18 @@
 import Link from "next/link";
 import Header from "../components/header";
+import Layout from '../components/Layout';
 
 function Index() {
   return (
-    <main>
-      <Header />
-      <section>
-        <Link href="/about">
-          <a>Go to About Me</a>
-        </Link>
-      </section>
-    </main>
+
+  <Layout>
+    <Header />
+    <section>
+      <Link href="/about">
+        <a>Go to About Me</a>
+      </Link>
+    </section>
+  </Layout>
   );
 }
 
